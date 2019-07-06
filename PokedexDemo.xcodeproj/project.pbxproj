@@ -85,6 +85,7 @@
 		270457BD22D101B500258912 /* PokedexDemo */ = {
 			isa = PBXGroup;
 			children = (
+				270457DE22D10BC000258912 /* welcome */,
 				270457BE22D101B500258912 /* AppDelegate.swift */,
 				270457C522D101B600258912 /* Assets.xcassets */,
 				270457C722D101B600258912 /* LaunchScreen.storyboard */,
@@ -96,10 +97,49 @@
 		270457D222D101B600258912 /* PokedexDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				270457E222D10BF400258912 /* Welcome */,
 				270457D322D101B600258912 /* PokedexDemoTests.swift */,
 				270457D522D101B600258912 /* Info.plist */,
 			);
 			path = PokedexDemoTests;
+			sourceTree = "<group>";
+		};
+		270457DE22D10BC000258912 /* welcome */ = {
+			isa = PBXGroup;
+			children = (
+				270457E122D10BDF00258912 /* Coordinator */,
+				270457E022D10BD200258912 /* ViewController */,
+				270457DF22D10BCB00258912 /* ViewModel */,
+			);
+			path = welcome;
+			sourceTree = "<group>";
+		};
+		270457DF22D10BCB00258912 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		270457E022D10BD200258912 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		270457E122D10BDF00258912 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		270457E222D10BF400258912 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		C67D8633EABD1435F407F690 /* Pods */ = {
