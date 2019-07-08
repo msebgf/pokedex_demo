@@ -4,8 +4,7 @@ platform :ios, '12.1'
 target 'PokedexDemo' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
-
+  
   pod 'Moya/RxSwift'
   pod 'RxDataSources'
   pod 'Swinject'
@@ -13,17 +12,19 @@ target 'PokedexDemo' do
   pod 'RxKingfisher'
   pod 'XCoordinator/RxSwift'
   pod 'Action'
-
-  target 'PokedexDemoTests' do
-    inherit! :search_paths
-
+  pod 'RxSwift', '4.2'
+  
+  abstract_target 'Tests' do
+    
+    target 'PokedexDemoTests'
+    
     pod 'RxNimble', subspecs: ['RxBlocking', 'RxTest']
     pod 'Quick'
     pod 'Mockingjay'
     pod 'Cuckoo'
-
+    
   end
-
+  
 end
 
 post_install do |installer_representation|
@@ -32,11 +33,11 @@ post_install do |installer_representation|
       config.build_settings['CLANG_ENABLE_CODE_COVERAGE'] = 'NO'
     end
   end
+  
   installer_representation.pods_project.targets.each do |target|
-      if ['Cuckoo', 'Quick', 'Nimble', 'URITemplate'].include? target.name
-          target.build_configurations.each do |config|
-              config.build_settings['SWIFT_VERSION'] = '4.2'
+    
+    target.build_configurations.each do |config|
+      config.build_settings['SWIFT_VERSION'] = '4.2'
           end
       end
-  end
 end
