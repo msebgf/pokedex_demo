@@ -21,7 +21,7 @@ class WelcomeCoordinatorTests: QuickSpec {
           let window = UIWindow()
           let coordinator = WelcomeCoordinator()
           coordinator.setRoot(for: window)
-          let transition = coordinator.prepareTransition(for: .main)
+          let transition = coordinator.prepareTransition(for: .welcome)
           expect(transition.presentables.first is WelcomeViewController).to(equal(true))
         })
       })

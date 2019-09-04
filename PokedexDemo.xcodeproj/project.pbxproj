@@ -14,6 +14,8 @@
 		270457E822D1148B00258912 /* WelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270457E722D1148B00258912 /* WelcomeCoordinator.swift */; };
 		270457EA22D1848600258912 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270457E922D1848600258912 /* WelcomeViewController.swift */; };
 		275ACC3222D2F52300F11E3E /* Pods-PokedexDemo-Tests-PokedexDemoTests-resources.sh in Frameworks */ = {isa = PBXBuildFile; fileRef = 275ACC3122D2F52300F11E3E /* Pods-PokedexDemo-Tests-PokedexDemoTests-resources.sh */; };
+		275ACC3422D2FB9A00F11E3E /* WelcomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275ACC3322D2FB9A00F11E3E /* WelcomeViewModelTests.swift */; };
+		275ACC3622D2FCB300F11E3E /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275ACC3522D2FCB300F11E3E /* WelcomeViewModel.swift */; };
 		27A62E4722D2D5AD009D3C46 /* WelcomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A62E4622D2D5AD009D3C46 /* WelcomeViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		270457E722D1148B00258912 /* WelcomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCoordinator.swift; sourceTree = "<group>"; };
 		270457E922D1848600258912 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		275ACC3122D2F52300F11E3E /* Pods-PokedexDemo-Tests-PokedexDemoTests-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "Pods-PokedexDemo-Tests-PokedexDemoTests-resources.sh"; path = "Pods/Target Support Files/Pods-PokedexDemo-Tests-PokedexDemoTests/Pods-PokedexDemo-Tests-PokedexDemoTests-resources.sh"; sourceTree = "<group>"; };
+		275ACC3322D2FB9A00F11E3E /* WelcomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModelTests.swift; sourceTree = "<group>"; };
+		275ACC3522D2FCB300F11E3E /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		27A62E4622D2D5AD009D3C46 /* WelcomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewControllerTests.swift; sourceTree = "<group>"; };
 		31CC9056E8E5CE747B460C26 /* Pods_PokedexDemo_PokedexDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokedexDemo_PokedexDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA364B0D7235BC5D9C5A2D5 /* Pods_PokedexDemo_Tests_PokedexDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokedexDemo_Tests_PokedexDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +134,7 @@
 		270457DF22D10BCB00258912 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				275ACC3522D2FCB300F11E3E /* WelcomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			children = (
 				270457E522D113D200258912 /* WelcomeCoordinatorTests.swift */,
 				27A62E4622D2D5AD009D3C46 /* WelcomeViewControllerTests.swift */,
+				275ACC3322D2FB9A00F11E3E /* WelcomeViewModelTests.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -451,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				270457EA22D1848600258912 /* WelcomeViewController.swift in Sources */,
+				275ACC3622D2FCB300F11E3E /* WelcomeViewModel.swift in Sources */,
 				270457BF22D101B500258912 /* AppDelegate.swift in Sources */,
 				270457E822D1148B00258912 /* WelcomeCoordinator.swift in Sources */,
 			);
@@ -461,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27A62E4722D2D5AD009D3C46 /* WelcomeViewControllerTests.swift in Sources */,
+				275ACC3422D2FB9A00F11E3E /* WelcomeViewModelTests.swift in Sources */,
 				270457E622D113D200258912 /* WelcomeCoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

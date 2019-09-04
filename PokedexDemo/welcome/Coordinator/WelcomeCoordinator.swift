@@ -9,20 +9,23 @@
 import XCoordinator
 
 enum WelcomeListRoute: Route {
-  case main
+  case welcome
+  case pokedex
 }
 
 class WelcomeCoordinator: NavigationCoordinator<WelcomeListRoute> {
   
   init() {
-    super.init(initialRoute: .main)
+    super.init(initialRoute: .welcome)
   }
   
   override func prepareTransition(for route: WelcomeListRoute) -> NavigationTransition {
     switch route {
-    case .main:
+    case .welcome:
       let viewController = WelcomeViewController()
       return .present(viewController)
+    case .pokedex:
+      return .none()
     }
   }
 }
